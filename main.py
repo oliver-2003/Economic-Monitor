@@ -371,7 +371,7 @@ class EconomicMonitor:
 
 
 monitor = EconomicMonitor("localhost", 3306, "root", "123456", "economicmonitor@gmail.com")
-# Generate a EconomicMonitor object with the database host being "localhost", port being 3306, user being "root", passwd being "123456", and the email address receiving reports being "economicmonitor@gmail.com"
+# Generate an EconomicMonitor object with the database host being "localhost", port being 3306, user being "root", passwd being "123456", and the email address receiving reports being "economicmonitor@gmail.com"
 
 
 def daily_message_generator():
