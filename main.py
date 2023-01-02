@@ -90,7 +90,7 @@ class EconomicMonitor:
             stock_info = soup.find_all('tr')[1:]
             for stock in stock_info:
                 try:
-                    # Get rid of extra spacing and comas in each data value
+                    # Get rid of extra spacing and commas in each data value
                     stock_name = stock.find('a').text
                     stock_price = float(stock.find_all('span')[0].text.strip().replace(',', ''))
                     open_price = float(stock.find_all('span')[2].text.strip().replace(',', ''))
