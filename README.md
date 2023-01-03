@@ -35,12 +35,17 @@ path = "weeklyGraphs"
 monitor.graph_generator(watchlist=name_list, path=path)
 ```
 The code above graphs all items that have a significant change in the value compared to that of one week ago, and then saves all the graphs in the target directory (weeklyGraphs).
+
+![image](Examples/commodity_prices_Sugar.png)
 ### Sending Reports
 #### Generating Daily Reports
 ```Python
 monitor.message_generator(message_type=0)
 ```
 The call of message_generator with the argument message_type=0 will generate a daily report. The report summarizes all items with significant changes in values with the name, current value, previous value, and percentage change of the items. The report will be organized as an HTML table with all graphs of the items attached to an email. The email will be sent to the email address set when initializing the object (economicmonitor@gmail.com in this case).
+
+![image](Examples/daily_report_example.png)
+
 #### Generating Weekly Reports
 ```Python
 monitor.message_generator(message_type=1)
