@@ -1,5 +1,5 @@
 # Economic-Monitor
-  This is a Python class that collects data on exchange rates, stock prices, bond yields, market indices, and commodity prices, storing data in MySQL database and generating daily and weekly reports through email to show significant changes in economic data.
+  This is a Python class that collects data on exchange rates, stock prices, bond yields, market indices, and commodity prices, stores data in MySQL database, and generates daily and weekly reports through email to show the significant changes in economic data.
 ## Getting Started
 ### MySQL Database
   This Python class scrapes economic data, and stores it in MySQL database. To utilize the class, make sure MySQL is properly installed. Execute EconomicMonitorSQLScript.sql to prepare the data tables required.
